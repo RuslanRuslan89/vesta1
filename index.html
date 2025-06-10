@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vesta Sergeeva Beauty - Профессиональное окрашивание и капсулирование</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Vesta Sergeeva Beauty | Мастер окрашивания и капсулирования</title>
+    <meta name="description" content="Профессиональное окрашивание, капсулирование и стрижки от Весты Сергеевой. Индивидуальный подход к каждому клиенту. Запишитесь онлайн!" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com"  crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- Preloader -->
     <div class="preloader">
-        <div class="preloader-spinner"></div>
+        <div class="spinner"></div>
     </div>
 
     <!-- Header -->
@@ -22,9 +23,9 @@
         <div class="container">
             <div class="header-inner">
                 <div class="logo">
-                    <a href="#">
-                        <span class="logo-text">Vesta Sergeeva</span>
-                        <span class="logo-subtext">Beauty</span>
+                    <a href="#hero"> 
+                        <span class="logo-text">Vesta</span>
+                        <span class="logo-subtext">Sergeeva Beauty</span>
                     </a>
                 </div>
                 <nav class="nav">
@@ -36,13 +37,11 @@
                         <li><a href="#pricing">Цены</a></li>
                         <li><a href="#contact">Контакты</a></li>
                     </ul>
-                    <div class="nav-mobile-toggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <div class="nav-toggle">
+                        <i class="fas fa-bars"></i>
                     </div>
                 </nav>
-                <div class="header-cta">
+                <div class="cta">
                     <a href="#booking" class="btn btn-primary">Записаться</a>
                 </div>
             </div>
@@ -50,87 +49,59 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="hero" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Профессиональное окрашивание и капсулирование волос</h1>
-                <p class="hero-subtitle">Индивидуальный подход к каждому клиенту для идеального результата</p>
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <div class="stat-number" data-count="1500">0</div>
-                        <div class="stat-label">Довольных клиентов</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number" data-count="12">0</div>
-                        <div class="stat-label">Лет опыта</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number" data-count="98">0</div>
-                        <div class="stat-label">% Рекомендаций</div>
-                    </div>
+                <h1>Профессиональное окрашивание и капсулирование</h1>
+                <p>Индивидуальный подход к каждому клиенту для идеального результата</p>
+                <div class="stats">
+                    <div class="stat"><strong>1500+</strong> довольных клиентов</div>
+                    <div class="stat"><strong>12 лет</strong> опыта</div>
+                    <div class="stat"><strong>98%</strong> рекомендаций</div>
                 </div>
-                <a href="#booking" class="btn btn-primary btn-large">Записаться онлайн</a>
+                <a href="#booking" class="btn btn-large">Записаться онлайн</a>
             </div>
             <div class="hero-image">
-                <div class="image-container">
-                    <img src="images/hero-image.jpg" alt="Vesta Sergeeva">
-                </div>
+                <img src="images/hero.jpg" alt="Веста Сергеева">
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Services -->
     <section id="services" class="section services">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Мои услуги</h2>
-                <p class="section-subtitle">Профессиональный уход за вашими волосами</p>
+                <h2>Мои услуги</h2>
+                <p>Профессиональный уход за вашими волосами</p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-paint-brush"></i>
-                    </div>
-                    <h3 class="service-title">Окрашивание волос</h3>
-                    <p class="service-description">Современные техники окрашивания для идеального цвета</p>
-                    <div class="service-progress">
-                        <div class="progress-label">Клиентская удовлетворенность</div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 95%"></div>
-                        </div>
-                        <div class="progress-value">95%</div>
+                    <div class="icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>Окрашивание</h3>
+                    <p>Современные техники окрашивания для идеального цвета.</p>
+                    <div class="progress-bar">
+                        <div class="bar" style="width: 95%"></div>
+                        <div class="label">95%</div>
                     </div>
                     <a href="#" class="btn btn-secondary">Подробнее</a>
                 </div>
-                
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-spa"></i>
-                    </div>
-                    <h3 class="service-title">Капсулирование</h3>
-                    <p class="service-description">Восстановление и защита волос после окрашивания</p>
-                    <div class="service-progress">
-                        <div class="progress-label">Клиентская удовлетворенность</div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 97%"></div>
-                        </div>
-                        <div class="progress-value">97%</div>
+                    <div class="icon"><i class="fas fa-spa"></i></div>
+                    <h3>Капсулирование</h3>
+                    <p>Восстановление и защита волос после окрашивания.</p>
+                    <div class="progress-bar">
+                        <div class="bar" style="width: 97%"></div>
+                        <div class="label">97%</div>
                     </div>
                     <a href="#" class="btn btn-secondary">Подробнее</a>
                 </div>
-                
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-cut"></i>
-                    </div>
-                    <h3 class="service-title">Стрижка и укладка</h3>
-                    <p class="service-description">Создание идеальной формы и стиля для ваших волос</p>
-                    <div class="service-progress">
-                        <div class="progress-label">Клиентская удовлетворенность</div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 93%"></div>
-                        </div>
-                        <div class="progress-value">93%</div>
+                    <div class="icon"><i class="fas fa-cut"></i></div>
+                    <h3>Стрижка</h3>
+                    <p>Создание идеальной формы и стиля для ваших волос.</p>
+                    <div class="progress-bar">
+                        <div class="bar" style="width: 93%"></div>
+                        <div class="label">93%</div>
                     </div>
                     <a href="#" class="btn btn-secondary">Подробнее</a>
                 </div>
@@ -138,104 +109,77 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About -->
     <section id="about" class="section about">
         <div class="container">
             <div class="about-grid">
                 <div class="about-image">
-                    <div class="image-container">
-                        <img src="images/about-image.jpg" alt="О Весте Сергеевой">
-                    </div>
+                    <img src="images/about.jpg" alt="Веста Сергеева">
                 </div>
                 <div class="about-content">
-                    <div class="section-header">
-                        <h2 class="section-title">Обо мне</h2>
-                        <p class="section-subtitle">Профессионал с любовью к своему делу</p>
-                    </div>
-                    <p class="about-text">Я, Веста Сергеева, мастер с 12-летним опытом работы в индустрии красоты. Специализируюсь на современных техниках окрашивания и инновационных методах ухода за волосами.</p>
-                    
-                    <div class="skills-chart">
+                    <h2>Обо мне</h2>
+                    <p>Я, Веста Сергеева, мастер с 12-летним опытом работы в индустрии красоты. Специализируюсь на современных техниках окрашивания и инновационных методах ухода за волосами.</p>
+                    <div class="skills">
                         <h4>Мои навыки</h4>
-                        <div class="chart-container">
-                            <canvas id="skillsChart"></canvas>
-                        </div>
-                    </div>
-                    
-                    <div class="certificates-slider">
-                        <h4>Мои сертификаты</h4>
-                        <div class="slider-container">
-                            <div class="slider-track">
-                                <div class="slider-item">
-                                    <img src="images/certificate1.jpg" alt="Сертификат 1">
-                                </div>
-                                <div class="slider-item">
-                                    <img src="images/certificate2.jpg" alt="Сертификат 2">
-                                </div>
-                                <div class="slider-item">
-                                    <img src="images/certificate3.jpg" alt="Сертификат 3">
-                                </div>
-                            </div>
-                            <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
-                            <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
-                        </div>
+                        <canvas id="skillsChart" width="300" height="300"></canvas>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
+    <!-- Portfolio -->
     <section id="portfolio" class="section portfolio">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Портфолио</h2>
-                <p class="section-subtitle">Мои лучшие работы</p>
+                <h2>Портфолио</h2>
+                <p>Мои лучшие работы</p>
             </div>
             <div class="portfolio-filter">
-                <button class="filter-btn active" data-filter="all">Все работы</button>
-                <button class="filter-btn" data-filter="coloring">Окрашивание</button>
-                <button class="filter-btn" data-filter="capsulation">Капсулирование</button>
-                <button class="filter-btn" data-filter="haircut">Стрижки</button>
+                <button data-filter="all" class="active">Все</button>
+                <button data-filter="coloring">Окрашивание</button>
+                <button data-filter="capsulation">Капсулирование</button>
+                <button data-filter="haircut">Стрижки</button>
             </div>
             <div class="portfolio-grid">
-                <div class="portfolio-item" data-category="coloring">
+                <div class="portfolio-item coloring">
                     <img src="images/portfolio1.jpg" alt="Работа 1">
-                    <div class="portfolio-overlay">
+                    <div class="overlay">
                         <h3>Окрашивание в блонд</h3>
                         <p>Техника: мелирование + тонирование</p>
                     </div>
                 </div>
-                <div class="portfolio-item" data-category="coloring">
+                <div class="portfolio-item coloring">
                     <img src="images/portfolio2.jpg" alt="Работа 2">
-                    <div class="portfolio-overlay">
+                    <div class="overlay">
                         <h3>Шатуш на темные волосы</h3>
                         <p>Техника: шатуш + капсулирование</p>
                     </div>
                 </div>
-                <div class="portfolio-item" data-category="capsulation">
+                <div class="portfolio-item capsulation">
                     <img src="images/portfolio3.jpg" alt="Работа 3">
-                    <div class="portfolio-overlay">
+                    <div class="overlay">
                         <h3>Капсулирование после химии</h3>
                         <p>Восстановление поврежденных волос</p>
                     </div>
                 </div>
-                <div class="portfolio-item" data-category="haircut">
+                <div class="portfolio-item haircut">
                     <img src="images/portfolio4.jpg" alt="Работа 4">
-                    <div class="portfolio-overlay">
+                    <div class="overlay">
                         <h3>Каскадная стрижка</h3>
                         <p>Создание объема и движения</p>
                     </div>
                 </div>
-                <div class="portfolio-item" data-category="coloring">
+                <div class="portfolio-item coloring">
                     <img src="images/portfolio5.jpg" alt="Работа 5">
-                    <div class="portfolio-overlay">
+                    <div class="overlay">
                         <h3>Балаяж на средние волосы</h3>
                         <p>Техника: ручная роспись</p>
                     </div>
                 </div>
-                <div class="portfolio-item" data-category="capsulation">
+                <div class="portfolio-item capsulation">
                     <img src="images/portfolio6.jpg" alt="Работа 6">
-                    <div class="portfolio-overlay">
+                    <div class="overlay">
                         <h3>Комплексное капсулирование</h3>
                         <p>Защита и восстановление</p>
                     </div>
@@ -244,440 +188,209 @@
         </div>
     </section>
 
-    <!-- Reviews Section -->
+    <!-- Reviews -->
     <section id="reviews" class="section reviews">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Отзывы клиентов</h2>
-                <p class="section-subtitle">Что говорят мои клиенты</p>
+                <h2>Отзывы клиентов</h2>
+                <p>Что говорят мои клиенты</p>
             </div>
-            <div class="reviews-slider">
+            <div class="review-slider">
                 <div class="review-card">
-                    <div class="review-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
-                    <p class="review-text">"Веста - настоящий профессионал! Мое окрашивание выглядит потрясающе, а волосы такие мягкие и здоровые после капсулирования. Рекомендую всем!"</p>
-                    <div class="review-author">
+                    <p>"Веста - настоящий профессионал! Мое окрашивание выглядит потрясающе, а волосы такие мягкие и здоровые после капсулирования. Рекомендую всем!"</p>
+                    <div class="author">
                         <img src="images/client1.jpg" alt="Анна К.">
-                        <div class="author-info">
+                        <div class="info">
                             <h4>Анна К.</h4>
                             <p>Клиент 5 лет</p>
                         </div>
                     </div>
                 </div>
                 <div class="review-card">
-                    <div class="review-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
-                    <p class="review-text">"После многих лет неудачных окрашиваний, наконец-то нашла своего мастера. Веста творит чудеса - цвет держится долго, волосы не портятся."</p>
-                    <div class="review-author">
+                    <p>"После многих лет неудачных окрашиваний, наконец-то нашла своего мастера. Веста творит чудеса - цвет держится долго, волосы не портятся."</p>
+                    <div class="author">
                         <img src="images/client2.jpg" alt="Марина П.">
-                        <div class="author-info">
+                        <div class="info">
                             <h4>Марина П.</h4>
                             <p>Клиент 3 года</p>
                         </div>
                     </div>
                 </div>
                 <div class="review-card">
-                    <div class="review-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
                     </div>
-                    <p class="review-text">"Капсулирование спасло мои волосы после неудачного окрашивания в другом салоне. Веста не только исправила ситуацию, но и дала ценные советы по уходу."</p>
-                    <div class="review-author">
+                    <p>"Капсулирование спасло мои волосы после неудачного окрашивания в другом салоне. Веста не только исправила ситуацию, но и дала ценные советы по уходу."</p>
+                    <div class="author">
                         <img src="images/client3.jpg" alt="Елена С.">
-                        <div class="author-info">
+                        <div class="info">
                             <h4>Елена С.</h4>
                             <p>Клиент 1 год</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="reviews-stats">
-                <div class="stats-card">
-                    <div class="stats-circle" data-percent="98">
-                        <svg class="circle-chart" viewBox="0 0 36 36">
-                            <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
-                            <path class="circle-fill" stroke-dasharray="98, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
-                        </svg>
-                        <div class="stats-value">98%</div>
-                    </div>
-                    <h4>Довольных клиентов</h4>
-                </div>
-                <div class="stats-card">
-                    <div class="stats-circle" data-percent="95">
-                        <svg class="circle-chart" viewBox="0 0 36 36">
-                            <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
-                            <path class="circle-fill" stroke-dasharray="95, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
-                        </svg>
-                        <div class="stats-value">95%</div>
-                    </div>
-                    <h4>Рекомендуют друзьям</h4>
-                </div>
-                <div class="stats-card">
-                    <div class="stats-circle" data-percent="90">
-                        <svg class="circle-chart" viewBox="0 0 36 36">
-                            <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
-                            <path class="circle-fill" stroke-dasharray="90, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
-                        </svg>
-                        <div class="stats-value">90%</div>
-                    </div>
-                    <h4>Возвращаются снова</h4>
-                </div>
-            </div>
         </div>
     </section>
 
-    <!-- Pricing Section -->
+    <!-- Pricing -->
     <section id="pricing" class="section pricing">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Цены на услуги</h2>
-                <p class="section-subtitle">Доступная роскошь для ваших волос</p>
+                <h2>Цены на услуги</h2>
+                <p>Доступная роскошь для ваших волос</p>
             </div>
             <div class="pricing-tabs">
-                <button class="pricing-tab active" data-tab="coloring">Окрашивание</button>
-                <button class="pricing-tab" data-tab="capsulation">Капсулирование</button>
-                <button class="pricing-tab" data-tab="haircare">Уход</button>
-                <button class="pricing-tab" data-tab="haircuts">Стрижки</button>
+                <button class="tab active" data-tab="coloring">Окрашивание</button>
+                <button class="tab" data-tab="capsulation">Капсулирование</button>
+                <button class="tab" data-tab="haircuts">Стрижки</button>
             </div>
             <div class="pricing-content">
-                <div class="pricing-table active" data-tab-content="coloring">
-                    <div class="pricing-card">
-                        <h3 class="pricing-title">Мелирование</h3>
-                        <div class="pricing-price">от 3 500 ₽</div>
-                        <ul class="pricing-features">
+                <div class="pricing-table active" data-tab="coloring">
+                    <div class="card">
+                        <h3>Мелирование</h3>
+                        <p>от 3 500 ₽</p>
+                        <ul>
                             <li>Частичное мелирование</li>
                             <li>Тонирование в 1 тон</li>
                             <li>Уход после процедуры</li>
-                            <li>Консультация по уходу</li>
                         </ul>
-                        <button class="btn btn-primary">Записаться</button>
+                        <button class="btn">Записаться</button>
                     </div>
-                    <div class="pricing-card featured">
-                        <div class="featured-badge">Популярно</div>
-                        <h3 class="pricing-title">Балаяж/Шатуш</h3>
-                        <div class="pricing-price">от 5 000 ₽</div>
-                        <ul class="pricing-features">
+                    <div class="card featured">
+                        <div class="badge">Популярно</div>
+                        <h3>Балаяж/Шатуш</h3>
+                        <p>от 5 000 ₽</p>
+                        <ul>
                             <li>Ручная техника нанесения</li>
                             <li>Индивидуальный подбор оттенков</li>
-                            <li>Тонирование в 2 тона</li>
                             <li>Капсулирование в подарок</li>
                         </ul>
-                        <button class="btn btn-primary">Записаться</button>
+                        <button class="btn">Записаться</button>
                     </div>
-                    <div class="pricing-card">
-                        <h3 class="pricing-title">Окрашивание в 1 тон</h3>
-                        <div class="pricing-price">от 2 500 ₽</div>
-                        <ul class="pricing-features">
+                    <div class="card">
+                        <h3>Окрашивание в 1 тон</h3>
+                        <p>от 2 500 ₽</p>
+                        <ul>
                             <li>Профессиональные красители</li>
                             <li>Защита кожи головы</li>
                             <li>Тонирование</li>
-                            <li>Консультация по уходу</li>
                         </ul>
-                        <button class="btn btn-primary">Записаться</button>
+                        <button class="btn">Записаться</button>
                     </div>
                 </div>
-                
-                <div class="pricing-table" data-tab-content="capsulation">
-                    <!-- Аналогичная структура для капсулирования -->
+                <div class="pricing-table" data-tab="capsulation">
+                    <div class="card">
+                        <h3>Капсулирование</h3>
+                        <p>от 2 000 ₽</p>
+                        <ul>
+                            <li>Нанесение капсулы</li>
+                            <li>Восстановление структуры волос</li>
+                            <li>Уход после процедуры</li>
+                        </ul>
+                        <button class="btn">Записаться</button>
+                    </div>
                 </div>
-                
-                <div class="pricing-table" data-tab-content="haircare">
-                    <!-- Аналогичная структура для ухода -->
-                </div>
-                
-                <div class="pricing-table" data-tab-content="haircuts">
-                    <!-- Аналогичная структура для стрижек -->
-                </div>
-            </div>
-            
-            <div class="pricing-comparison">
-                <h3>Сравнение пакетов услуг</h3>
-                <div class="comparison-chart">
-                    <canvas id="comparisonChart"></canvas>
+                <div class="pricing-table" data-tab="haircuts">
+                    <div class="card">
+                        <h3>Стрижка</h3>
+                        <p>от 1 500 ₽</p>
+                        <ul>
+                            <li>Создание формы</li>
+                            <li>Любая длина</li>
+                            <li>Консультация по уходу</li>
+                        </ul>
+                        <button class="btn">Записаться</button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Booking Section -->
+    <!-- Booking -->
     <section id="booking" class="section booking">
         <div class="container">
             <div class="booking-grid">
-                <div class="booking-form">
-                    <div class="section-header">
-                        <h2 class="section-title">Записаться на прием</h2>
-                        <p class="section-subtitle">Выберите удобное время</p>
-                    </div>
+                <div class="form">
+                    <h2>Записаться на прием</h2>
                     <form id="appointmentForm">
-                        <div class="form-group">
-                            <input type="text" id="name" placeholder="Ваше имя" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" id="phone" placeholder="Телефон" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            <select id="service" required>
-                                <option value="">Выберите услугу</option>
-                                <option value="coloring">Окрашивание</option>
-                                <option value="capsulation">Капсулирование</option>
-                                <option value="haircut">Стрижка</option>
-                                <option value="complex">Комплексная услуга</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <input type="date" id="date" required>
-                        </div>
-                        <div class="form-group">
-                            <select id="time" required>
-                                <option value="">Выберите время</option>
-                                <!-- Время будет заполнено через JS -->
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="comments" placeholder="Ваши пожелания"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-large">Записаться</button>
+                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="tel" placeholder="Телефон" required>
+                        <input type="email" placeholder="Email">
+                        <select required>
+                            <option value="">Выберите услугу</option>
+                            <option value="coloring">Окрашивание</option>
+                            <option value="capsulation">Капсулирование</option>
+                            <option value="haircut">Стрижка</option>
+                        </select>
+                        <input type="date" required>
+                        <textarea placeholder="Ваши пожелания"></textarea>
+                        <button type="submit" class="btn btn-primary">Записаться</button>
                     </form>
                 </div>
-                <div class="booking-calendar">
-                    <div class="calendar-header">
-                        <button id="prevMonth"><i class="fas fa-chevron-left"></i></button>
-                        <h3 id="currentMonth">Июнь 2023</h3>
-                        <button id="nextMonth"><i class="fas fa-chevron-right"></i></button>
-                    </div>
-                    <div class="calendar-weekdays">
-                        <div>Пн</div>
-                        <div>Вт</div>
-                        <div>Ср</div>
-                        <div>Чт</div>
-                        <div>Пт</div>
-                        <div>Сб</div>
-                        <div>Вс</div>
-                    </div>
-                    <div class="calendar-days" id="calendarDays">
-                        <!-- Дни будут заполнены через JS -->
-                    </div>
-                    <div class="calendar-legend">
-                        <div class="legend-item">
-                            <div class="legend-color available"></div>
-                            <div class="legend-text">Доступно</div>
-                        </div>
-                        <div class="legend-item">
-                            <div class="legend-color booked"></div>
-                            <div class="legend-text">Занято</div>
-                        </div>
-                        <div class="legend-item">
-                            <div class="legend-color selected"></div>
-                            <div class="legend-text">Выбрано</div>
-                        </div>
-                    </div>
+                <div class="calendar">
+                    <h3>Календарь</h3>
+                    <div id="calendarView"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section id="contact" class="section contact">
         <div class="container">
             <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="section-header">
-                        <h2 class="section-title">Контакты</h2>
-                        <p class="section-subtitle">Как со мной связаться</p>
+                <div class="info">
+                    <h2>Контакты</h2>
+                    <div class="item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>г. Москва, ул. Красивая, д. 15</p>
                     </div>
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="info-content">
-                            <h4>Адрес</h4>
-                            <p>г. Москва, ул. Красивая, д. 15</p>
-                            <p>Салон "Элегант", 2 этаж</p>
-                        </div>
+                    <div class="item">
+                        <i class="fas fa-phone-alt"></i>
+                        <p><a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
                     </div>
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <div class="info-content">
-                            <h4>Телефон</h4>
-                            <p><a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
-                        </div>
+                    <div class="item">
+                        <i class="fas fa-envelope"></i>
+                        <p><a href="mailto:info@vestasergeeva.ru">info@vestasergeeva.ru</a></p>
                     </div>
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="info-content">
-                            <h4>Email</h4>
-                            <p><a href="mailto:info@vestasergeeva.ru">info@vestasergeeva.ru</a></p>
-                        </div>
+                    <div class="item">
+                        <i class="fas fa-clock"></i>
+                        <p>Пн-Пт: 10:00 - 20:00</p>
+                        <p>Сб: 11:00 - 18:00</p>
+                        <p>Вс: выходной</p>
                     </div>
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div class="info-content">
-                            <h4>Часы работы</h4>
-                            <p>Пн-Пт: 10:00 - 20:00</p>
-                            <p>Сб: 11:00 - 18:00</p>
-                            <p>Вс: выходной</p>
-                        </div>
-                    </div>
-                    <div class="social-links">
+                    <div class="socials">
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-vk"></i></a>
                         <a href="#"><i class="fab fa-whatsapp"></i></a>
                         <a href="#"><i class="fab fa-telegram"></i></a>
                     </div>
                 </div>
-                <div class="contact-map">
-                    <div id="map">
-                        <!-- Здесь будет карта -->
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.373789429732!2d37.61531071593095!3d55.75202398055309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a738fa419%3A0x7c347d506f52311f!2z0JrRgNCw0YHQvdCw0Y8g0J_RgNC10YHQvdC40LbQsNGA0LjQuSDQutC-0LvQu9C10LTQtiDQv9GA0L7Qs9GA0LDQvNC80LjRgNC-0LLQsNC90LjRjw!5e0!3m2!1sru!2sru!4v1623941234567!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.373789429732!2d37.61531071593095!3d55.75202398055309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a738fa419%3A0x7c347d506f52311f!2z0JrRgNCw0YHQvdCw0Y8g0J_RgNC10YHQvdC40LbQsNGA0LjQuSDQutC-0LvQu9C10LTQtiDQv9GA0L7Qs9GA0LDQvNC80LjRgNC-0LLQsNC90LjRjw!5e0!3m2!1sru!2sru!4v1623941234567!5m2!1sru!2sru" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="section faq">
+    <!-- Footer -->
+    <footer>
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Частые вопросы</h2>
-                <p class="section-subtitle">Все, что вы хотели знать</p>
-            </div>
-            <div class="faq-accordion">
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <h3>Что такое капсулирование волос?</h3>
-                        <div class="accordion-icon">
-                            <i class="fas fa-plus"></i>
-                        </div>
-                    </div>
-                    <div class="accordion-content">
-                        <p>Капсулирование волос - это инновационная процедура восстановления и защиты волос после окрашивания. Специальные составы с кератином, протеинами и витаминами "запечатывают" волос, создавая защитную оболочку, которая предотвращает вымывание пигмента, защищает от внешних воздействий и придает волосам здоровый блеск и гладкость.</p>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <h3>Как долго держится окрашивание?</h3>
-                        <div class="accordion-icon">
-                            <i class="fas fa-plus"></i>
-                        </div>
-                    </div>
-                    <div class="accordion-content">
-                        <p>Продолжительность зависит от типа окрашивания, состояния волос и ухода за ними. В среднем:</p>
-                        <ul>
-                            <li>Окрашивание в один тон - 4-6 недель</li>
-                            <li>Мелирование - 8-12 недель</li>
-                            <li>Балаяж/шатуш - 10-14 недель</li>
-                        </ul>
-                        <p>Капсулирование продлевает стойкость цвета на 30-50%.</p>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <h3>Как подготовиться к окрашиванию?</h3>
-                        <div class="accordion-icon">
-                            <i class="fas fa-plus"></i>
-                        </div>
-                    </div>
-                    <div class="accordion-content">
-                        <p>Для лучшего результата рекомендуется:</p>
-                        <ol>
-                            <li>Не мыть голову за 1-2 дня до процедуры</li>
-                            <li>Избегать использования укладочных средств перед визитом</li>
-                            <li>Принести фото желаемого оттенка или стрижки</li>
-                            <li>Сообщить о предыдущих окрашиваниях и используемых средствах</li>
-                            <li>При чувствительной коже сделать тест на аллергию за 48 часов</li>
-                        </ol>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <h3>Как ухаживать за волосами после окрашивания?</h3>
-                        <div class="accordion-icon">
-                            <i class="fas fa-plus"></i>
-                        </div>
-                    </div>
-                    <div class="accordion-content">
-                        <p>Рекомендации по уходу:</p>
-                        <ul>
-                            <li>Используйте профессиональные шампуни для окрашенных волос</li>
-                            <li>Избегайте мытья головы горячей водой</li>
-                            <li>Применяйте маски 1-2 раза в неделю</li>
-                            <li>Ограничьте использование термоприборов</li>
-                            <li>Защищайте волосы от ультрафиолета и хлорированной воды</li>
-                            <li>Раз в 4-6 недель делайте тонирование для поддержания цвета</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            <p>&copy; 2025 Vesta Sergeeva Beauty. Все права защищены.</p>
         </div>
-    </section>
+    </footer>
 
-    <!-- Blog Section -->
-    <section class="section blog">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Полезные статьи</h2>
-                <p class="section-subtitle">Советы по уходу за волосами</p>
-            </div>
-            <div class="blog-grid">
-                <div class="blog-card">
-                    <div class="blog-image">
-                        <img src="images/blog1.jpg" alt="Тренды окрашивания 2023">
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span class="blog-date">15 июня 2023</span>
-                            <span class="blog-category">Окрашивание</span>
-                        </div>
-                        <h3 class="blog-title">Тренды окрашивания 2023: что выбрать?</h3>
-                        <p class="blog-excerpt">Обзор самых модных техник окрашивания в этом сезоне и как подобрать идеальный вариант под ваш тип волос и образ жизни.</p>
-                        <a href="#" class="blog-link">Читать далее <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="blog-card">
-                    <div class="blog-image">
-                        <img src="images/blog2.jpg" alt="Капсулирование волос">
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span class="blog-date">5 июня 2023</span>
-                            <span class="blog-category">Уход</span>
-                        </div>
-                        <h3 class="blog-title">Капсулирование: революция в уходе за окрашенными волосами</h3>
-                        <p class="blog-excerpt">Как работает капсулирование, кому оно необходимо и какие результаты можно ожидать после процедуры.</p>
-                        <a href="#" class="blog-link">Читать далее <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="blog-card">
-                    <div class="blog-image">
-                        <img src="images/blog3.jpg" alt="Домашний уход">
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span class="blog-date">25 мая 2023</span>
-                            <span class="blog-category">Советы</span>
-                        </div>
-                        <h3 class="blog-title">5 правил домашнего ухода за окрашенными волосами</h3>
-                        <p class="blog-excerpt">Простые, но эффективные рекомендации, которые помогут сохранить цвет и здоровье ваших волос между ви
+    <script src="js/main.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/accordion.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/charts.js"></script>
+</body>
+</html>
