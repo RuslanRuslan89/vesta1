@@ -1,1 +1,38 @@
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        background: #fff;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        z-index: 999;
+    }
 
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-mobile-toggle {
+        display: flex;
+    }
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .stat-item {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .service-card {
+        margin-bottom: 20px;
+    }
+
+    .review-card {
+        width: 100%;
+    }
+}
