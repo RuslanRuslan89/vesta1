@@ -30,3 +30,22 @@ new Chart(ctx, {
     }
 });
 </script>
+const ctx = document.getElementById('skillsChart').getContext('2d');
+new Chart(ctx, {
+    type: 'pie',
+    data: {
+        labels: ['Окрашивание', 'Капсулирование', 'Стрижки'],
+        datasets: [{
+            label: 'Навыки',
+            data: [95, 97, 93],
+            backgroundColor: ['#f4b183', '#e09d70', '#d08a60']
+        }]
+    },
+    options: {
+        plugins: {
+            legend: {
+                display: true
+            }
+        }
+    }
+});
