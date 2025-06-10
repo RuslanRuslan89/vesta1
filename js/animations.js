@@ -21,13 +21,3 @@ const preloader = document.querySelector('.preloader');
 window.addEventListener('load', () => {
     preloader.style.display = 'none';
 });
-.fade-in {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.6s ease-out;
-}
-
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
