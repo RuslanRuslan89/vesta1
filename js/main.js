@@ -55,3 +55,13 @@ const navList = document.querySelector('.nav-list');
 navToggle.addEventListener('click', () => {
     navList.classList.toggle('active');
 });
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
