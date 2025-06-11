@@ -1,374 +1,97 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Vesta Sergeeva Beauty | Профессиональное окрашивание и капсулирование</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/animations.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vesta Serggeva Beauty</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="spinner"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <img src="assets/images/logo.png" alt="Vesta Serggeva Logo" class="logo">
+      <nav class="nav">
+        <a href="#services">Услуги</a> 
+        <a href="#about">О нас</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#contact">Контакты</a>
+      </nav>
     </div>
+  </header>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="header-inner">
-                <div class="logo">
-                    <a href="#hero"> 
-                        <span class="logo-text">Vesta</span>
-                        <span class="logo-subtext">Sergeeva Beauty</span>
-                    </a>
-                </div>
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li><a href="#services">Услуги</a></li>
-                        <li><a href="#about">Обо мне</a></li>
-                        <li><a href="#portfolio">Портфолио</a></li>
-                        <li><a href="#reviews">Отзывы</a></li>
-                        <li><a href="#pricing">Цены</a></li>
-                        <li><a href="#contact">Контакты</a></li>
-                    </ul>
-                    <div class="nav-toggle">
-                        <i class="fas fa-bars"></i>
-                    </div>
-                </nav>
-                <div class="cta">
-                    <a href="#booking" class="btn btn-primary">Записаться</a>
-                </div>
-            </div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Стиль. Качество. Уход.</h1>
+      <p>Профессиональные окрашивания и капсуляция от Vesta Serggeva</p>
+      <a href="#services" class="btn">Записаться</a>
+    </div>
+    <img src="assets/images/hero.jpg" alt="Hero Image" class="hero-image">
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Наши услуги</h2>
+      <div class="service-cards">
+        <div class="card">
+          <img src="assets/images/service1.jpg" alt="Hair Coloring">
+          <h3>Окрашивание</h3>
+          <p>Полное спектр современных техник окрашивания.</p>
         </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Профессиональное окрашивание и капсулирование</h1>
-                <p>Индивидуальный подход к каждому клиенту для идеального результата</p>
-                <div class="stats">
-                    <div class="stat"><strong>1500+</strong> довольных клиентов</div>
-                    <div class="stat"><strong>12 лет</strong> опыта</div>
-                    <div class="stat"><strong>98%</strong> рекомендаций</div>
-                </div>
-                <a href="#booking" class="btn btn-large">Записаться онлайн</a>
-            </div>
-            <div class="hero-image">
-                <img src="images/hero.jpg" alt="Веста Сергеева" />
-            </div>
+        <div class="card">
+          <img src="assets/images/service2.jpg" alt="Encapsulation">
+          <h3>Капсуляция</h3>
+          <p>Инновационный метод ухода за волосами.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Services -->
-    <section id="services" class="section services">
-        <div class="container">
-            <div class="section-header">
-                <h2>Мои услуги</h2>
-                <p>Профессиональный уход за вашими волосами</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="icon"><i class="fas fa-paint-brush"></i></div>
-                    <h3>Окрашивание</h3>
-                    <p>Современные техники окрашивания для идеального цвета.</p>
-                    <div class="progress-bar">
-                        <div class="bar" style="width: 95%"></div>
-                        <div class="label">95%</div>
-                    </div>
-                    <a href="#" class="btn btn-secondary">Подробнее</a>
-                </div>
-                <div class="service-card">
-                    <div class="icon"><i class="fas fa-spa"></i></div>
-                    <h3>Капсулирование</h3>
-                    <p>Восстановление и защита волос после окрашивания.</p>
-                    <div class="progress-bar">
-                        <div class="bar" style="width: 97%"></div>
-                        <div class="label">97%</div>
-                    </div>
-                    <a href="#" class="btn btn-secondary">Подробнее</a>
-                </div>
-                <div class="service-card">
-                    <div class="icon"><i class="fas fa-cut"></i></div>
-                    <h3>Стрижка</h3>
-                    <p>Создание идеальной формы и стиля для ваших волос.</p>
-                    <div class="progress-bar">
-                        <div class="bar" style="width: 93%"></div>
-                        <div class="label">93%</div>
-                    </div>
-                    <a href="#" class="btn btn-secondary">Подробнее</a>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="container">
+      <img src="assets/images/team.jpg" alt="Team Photo">
+      <div class="text">
+        <h2>О Vesta Serggeva</h2>
+        <p>Vesta Serggeva — профессионал в области модного окрашивания и капсуляции волос. Мы создаем индивидуальные решения для каждого клиента.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- About -->
-    <section id="about" class="section about">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-image">
-                    <img src="images/about.jpg" alt="Веста Сергеева" />
-                </div>
-                <div class="about-content">
-                    <h2>Обо мне</h2>
-                    <p>Я, Веста Сергеева — мастер с 12-летним опытом работы в индустрии красоты. Специализируюсь на современных техниках окрашивания и инновационных методах ухода за волосами.</p>
-                    <div class="skills">
-                        <h4>Мои навыки</h4>
-                        <canvas id="skillsChart" width="300" height="300"></canvas>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Gallery -->
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <h2>Галерея</h2>
+      <div class="slider">
+        <div class="slide"><img src="assets/images/gallery1.jpg" alt=""></div>
+        <div class="slide"><img src="assets/images/gallery2.jpg" alt=""></div>
+        <div class="slide"><img src="assets/images/gallery3.jpg" alt=""></div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Portfolio -->
-    <section id="portfolio" class="section portfolio">
-        <div class="container">
-            <div class="section-header">
-                <h2>Портфолио</h2>
-                <p>Мои лучшие работы</p>
-            </div>
-            <div class="portfolio-filter">
-                <button data-filter="all" class="active">Все</button>
-                <button data-filter="coloring">Окрашивание</button>
-                <button data-filter="capsulation">Капсулирование</button>
-                <button data-filter="haircut">Стрижки</button>
-            </div>
-            <div class="portfolio-grid">
-                <div class="portfolio-item coloring">
-                    <img src="images/portfolio1.jpg" alt="Работа 1" />
-                    <div class="overlay">
-                        <h3>Окрашивание в блонд</h3>
-                        <p>Техника: мелирование + тонирование</p>
-                    </div>
-                </div>
-                <div class="portfolio-item coloring">
-                    <img src="images/portfolio2.jpg" alt="Работа 2" />
-                    <div class="overlay">
-                        <h3>Шатуш на темные волосы</h3>
-                        <p>Техника: шатуш + капсулирование</p>
-                    </div>
-                </div>
-                <div class="portfolio-item capsulation">
-                    <img src="images/portfolio3.jpg" alt="Работа 3" />
-                    <div class="overlay">
-                        <h3>Капсулирование после химии</h3>
-                        <p>Восстановление поврежденных волос</p>
-                    </div>
-                </div>
-                <div class="portfolio-item haircut">
-                    <img src="images/portfolio4.jpg" alt="Работа 4" />
-                    <div class="overlay">
-                        <h3>Каскадная стрижка</h3>
-                        <p>Создание объема и движения</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Свяжитесь с нами</h2>
+      <form id="contact-form">
+        <input type="text" placeholder="Ваше имя" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Ваше сообщение" required></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+  </section>
 
-    <!-- Reviews -->
-    <section id="reviews" class="section reviews">
-        <div class="container">
-            <div class="section-header">
-                <h2>Отзывы клиентов</h2>
-                <p>Что говорят мои клиенты</p>
-            </div>
-            <div class="review-slider">
-                <div class="review-card">
-                    <div class="rating">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p>"Веста - настоящий профессионал! Мое окрашивание выглядит потрясающе, а волосы такие мягкие и здоровые после капсулирования."</p>
-                    <div class="author">
-                        <img src="images/client1.jpg" alt="Анна К." />
-                        <div class="info">
-                            <h4>Анна К.</h4>
-                            <p>Клиент 5 лет</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="review-card">
-                    <div class="rating">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p>"После многих лет неудачных окрашиваний, наконец-то нашла своего мастера. Веста творит чудеса - цвет держится долго, волосы не портятся."</p>
-                    <div class="author">
-                        <img src="images/client2.jpg" alt="Марина П." />
-                        <div class="info">
-                            <h4>Марина П.</h4>
-                            <p>Клиент 3 года</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="review-card">
-                    <div class="rating">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <p>"Капсулирование спасло мои волосы после неудачного окрашивания в другом салоне. Веста не только исправила ситуацию, но и дала ценные советы по уходу."</p>
-                    <div class="author">
-                        <img src="images/client3.jpg" alt="Елена С." />
-                        <div class="info">
-                            <h4>Елена С.</h4>
-                            <p>Клиент 1 год</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Vesta Serggeva Beauty. Все права защищены.</p>
+  </footer>
 
-    <!-- Pricing -->
-    <section id="pricing" class="section pricing">
-        <div class="container">
-            <div class="section-header">
-                <h2>Цены на услуги</h2>
-                <p>Доступная роскошь для ваших волос</p>
-            </div>
-            <div class="pricing-tabs">
-                <button class="tab active" data-tab="coloring">Окрашивание</button>
-                <button class="tab" data-tab="capsulation">Капсулирование</button>
-                <button class="tab" data-tab="haircuts">Стрижки</button>
-            </div>
-            <div class="pricing-content">
-                <div class="pricing-table active" data-tab="coloring">
-                    <div class="card">
-                        <h3>Мелирование</h3>
-                        <p>от 3 500 ₽</p>
-                        <ul>
-                            <li>Частичное мелирование</li>
-                            <li>Тонирование в 1 тон</li>
-                            <li>Уход после процедуры</li>
-                        </ul>
-                        <button class="btn">Записаться</button>
-                    </div>
-                    <div class="card featured">
-                        <div class="badge">Популярно</div>
-                        <h3>Балаяж/Шатуш</h3>
-                        <p>от 5 000 ₽</p>
-                        <ul>
-                            <li>Ручная техника нанесения</li>
-                            <li>Индивидуальный подбор оттенков</li>
-                            <li>Капсулирование в подарок</li>
-                        </ul>
-                        <button class="btn">Записаться</button>
-                    </div>
-                    <div class="card">
-                        <h3>Окрашивание в 1 тон</h3>
-                        <p>от 2 500 ₽</p>
-                        <ul>
-                            <li>Профессиональные красители</li>
-                            <li>Защита кожи головы</li>
-                            <li>Тонирование</li>
-                        </ul>
-                        <button class="btn">Записаться</button>
-                    </div>
-                </div>
-                <div class="pricing-table" data-tab="capsulation">
-                    <div class="card">
-                        <h3>Капсулирование</h3>
-                        <p>от 2 000 ₽</p>
-                        <ul>
-                            <li>Нанесение капсулы</li>
-                            <li>Восстановление структуры волос</li>
-                            <li>Уход после процедуры</li>
-                        </ul>
-                        <button class="btn">Записаться</button>
-                    </div>
-                </div>
-                <div class="pricing-table" data-tab="haircuts">
-                    <div class="card">
-                        <h3>Стрижка</h3>
-                        <p>от 1 500 ₽</p>
-                        <ul>
-                            <li>Создание формы</li>
-                            <li>Любая длина</li>
-                            <li>Консультация по уходу</li>
-                        </ul>
-                        <button class="btn">Записаться</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Booking -->
-    <section id="booking" class="section booking">
-        <div class="container">
-            <div class="booking-grid">
-                <div class="form">
-                    <h2>Записаться на прием</h2>
-                    <form id="appointmentForm">
-                        <input type="text" placeholder="Ваше имя" required />
-                        <input type="tel" placeholder="Телефон" required />
-                        <input type="email" placeholder="Email" />
-                        <select required>
-                            <option value="">Выберите услугу</option>
-                            <option value="coloring">Окрашивание</option>
-                            <option value="capsulation">Капсулирование</option>
-                            <option value="haircut">Стрижка</option>
-                        </select>
-                        <input type="date" required />
-                        <textarea placeholder="Ваши пожелания"></textarea>
-                        <button type="submit" class="btn btn-primary">Записаться</button>
-                    </form>
-                </div>
-                <div class="calendar">
-                    <h3>Календарь</h3>
-                    <div id="calendarView"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section contact">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="info">
-                    <h2>Контакты</h2>
-                    <div class="item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>г. Москва, ул. Красивая, д. 15</p>
-                    </div>
-                    <div class="item">
-                        <i class="fas fa-phone-alt"></i>
-                        <p><a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
-                    </div>
-                    <div class="item">
-                        <i class="fas fa-envelope"></i>
-                        <p><a href="mailto:info@vestasergeeva.ru">info@vestasergeeva.ru</a></p>
-                    </div>
-                    <div class="socials">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-vk"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-telegram"></i></a>
-                    </div>
-                </div>
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.373789429732!2d37.61531071593095!3d55.75202398055309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a738fa419%3A0x7c347d506f52311f!2z0JrRgNCw0YHQvdCw0Y8g0J_RgNC10YHQvdC40LbQsNGA0LjQuSDQutC-0LvQu9C10LTQtiDQv9GA0L7Qs9GA0LDQvNC80LjRgNC-0LLQsNC90LjRjw!5e0!3m2!1sru!2sru!4v1623941234567!5m2!1sru!2sru" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Vesta Sergeeva Beauty. Все права защищены.</p>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="js/main.js"></script>
-    <script src="js/calendar.js"></script>
-    <script src="js/accordion.js"></script>
-    <script src="js/slider.js"></script>
-    <script src="js/charts.js"></script>
+  <script src="scripts/main.js"></script>
 </body>
 </html>
